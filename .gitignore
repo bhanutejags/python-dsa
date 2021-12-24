@@ -1,0 +1,28 @@
+# Jetbrains IDE
+.idea/
+
+# iPython Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.DS_Store
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+__pypackages__/
+.hypothesis/
+
+# Virtual Env
+.venv
+
+# MkDocs output
+site/
+
+# Coverage
+.coverage
+htmlcov/
+

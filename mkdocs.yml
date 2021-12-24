@@ -1,0 +1,108 @@
+site_name: Data Structures and Algorithms in Python
+site_url: https://bhanutejags.github.io/python-dsa/
+site_author: Bhanu Teja Ganneni
+site_description: >-
+  Implementation of various Algorithms and Data Structures in Python.
+
+repo_name: bhanutejags/python-dsa/
+repo_url: https://github.com/bhanutejags/python-dsa/
+
+copyright: Copyright &copy; 2020 Bhanu Teja Ganneni
+
+nav:
+  - Home: index.md
+  - Algorithms:
+    - Analysis Of Algorithms: algorithms/analysis_of_algorithms.md
+    - Divide and Conquer:
+        - Index: algorithms/divide_and_conquer/index.md
+        - Binary Search: algorithms/divide_and_conquer/binary_search.md
+        - Heap Sort: algorithms/divide_and_conquer/heap_sort.md
+        - Merge Sort: algorithms/divide_and_conquer/merge_sort.md
+        - Quick Sort: algorithms/divide_and_conquer/quick_sort.md
+        - Strassen's Matrix Multiplication: algorithms/divide_and_conquer/strassens_matrix_multiplication.md
+    - Greedy Method:
+        - Index: algorithms/greedy_method/index.md
+        - Knapsack Problem: algorithms/greedy_method/knapsack_problem.md
+        - Job Sequencing with Deadline: algorithms/greedy_method/job_sequencing_with_deadlines.md
+        - Optimal Merge Pattern: algorithms/greedy_method/optimal_merge_pattern.md
+        - Huffman Coding: algorithms/greedy_method/huffman_coding.md
+        - Prim's and Kruskal's: algorithms/greedy_method/prims_and_kruskals.md
+        - Dijkstra Algorithm: algorithms/greedy_method/dijkstra_algorithm.md
+  - Example: example.md
+
+# https://squidfunk.github.io/mkdocs-material/
+theme:
+  name: "material"
+  font:
+    code: Source Code Pro
+    text: Roboto
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+    - content.tabs.link
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bhanutejags
+#  generator: false
+
+plugins:
+  - search
+  - autorefs
+  - mkdocstrings:
+      watch:
+        - dsa
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.saneheaders
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+        # https://github.com/fralau/mkdocs-mermaid2-plugin
+#        - name: mermaid
+#          class: mermaid
+#          format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js

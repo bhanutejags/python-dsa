@@ -1,0 +1,32 @@
+# Formatting and Linting Libraries
+black
+isort
+flake8
+## https://testdriven.io/blog/documenting-python/
+darglint
+mypy
+## Spell Check: https://github.com/codespell-project/codespell
+codespell
+
+
+# Testing Libraries
+pytest
+pytest-cov
+pytest-sugar
+## https://github.com/anapaulagomes/pytest-picked
+pytest-picked
+## https://github.com/HypothesisWorks/hypothesis
+## https://hypothesis.readthedocs.io/en/latest/index.html
+hypothesis
+
+# Documentation
+## https://www.mkdocs.org
+mkdocs
+## https://mkdocstrings.github.io
+mkdocstrings
+## https://squidfunk.github.io/mkdocs-material
+mkdocs-material
+# https://facelessuser.github.io/pymdown-extensions/
+pymdown-extensions
+# https://github.com/mkdocstrings/autorefs
+mkdocs-autorefs
